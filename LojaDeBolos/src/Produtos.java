@@ -4,7 +4,7 @@ public class Produtos {
 	private String tipo;
 	private String nome;
 	private double preco;
-	private double peso; //relacionar o peso ao preço
+	private double peso; 
 	
 	public Produtos() {
 		
@@ -51,8 +51,8 @@ public class Produtos {
 	}
 
 	public String detalhes() {
-		return "Detalhes do Produto" + "\nTipo:" + this.getTipo() + "\n Nome:" + this.getNome()
-		+ "\nPreço:" + this.getPreco() + "\nPeso:" + this.getPeso();
+		return "Detalhes do Produto" + "\nTipo: " + this.getTipo() + "\nNome: " + this.getNome()
+		+ "\nPreço: " + String.format("R$ %.2f",this.getPreco()) + "\nPeso: " + this.getPeso() +"g";
 	}
 	
 	
